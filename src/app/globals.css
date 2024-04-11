@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+body {
+
+  margin-top: 40px;
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+dl, ol, ul{
+  margin:unset !important;
+  padding: unset !important;
+}
+
+.github-profiler{
+  font-size: 32px;
+  vertical-align: middle;
+  color: #fff;
+}
+.header-wrapper{
+  text-align: center;
+  padding: 10px;
+}
+.header-wrapper svg {
+  fill: #fff;
+  margin-right: 10px;
+}
+section.header {
+  background: #24292f;
+}
+
+.main-wrapper>ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrapper ul li {
+  list-style-type: none;
+  margin: 5px;
+}
+.main-wrapper input.form-control {
+  padding: 10px;
+}
+.newsBody {
+  background-color: #f6f8fa;
+  padding: 40px;
+  height: 555px;
+}
+.inputFeild {
+  width: 60%;
+}
+.button button {
+  padding: 9px;
+  width: 100px;
+}
+.form-control{
+  border: 1px solid #24292f;
+}
+.form-control:focus{
+  box-shadow: none !important;
+  border: 1px solid none;
+}
+.card_wrapper{
+  display: flex;
+  justify-content: center;
+}
+.hide,button.swal-button.swal-button--cancel{
+  display: none;
+}
+.swal-modal {
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+}
+.swal-button {
+  font-weight: unset;
+  color: #000;
+  background: unset;
+  border: unset;
+  outline: unset;
+  box-shadow: none !important;
+  padding: unset;
+  position: absolute;
+  top: -75px !important;
+  left: -10px;
+  font-size: 13px !important;
+  font-size: 22px !important;
+}
+.swal-modal {
+  height: 70px;
+}
+.swal-button:hover{
+  background-color: unset !important;
+}
+.show
+{
+  display: block;
+}
+.mt .ant-card-meta-description {
+  margin-top: 10px;
+}
+
+.error-wrapper {
+  width: 500px;
+  text-align: center;
+  margin-top: 50px;
+}
+.card_wrapper .ant-alert {
+  margin-top: 40px;
+}
+.card_wrapper .ant-card-meta {
+  display: block !important;
+}
+.card_wrapper .ant-card-meta-avatar {
+  text-align: center;
+}
+.card_wrapper span.ant-avatar{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.ant-card-meta-title {
+  text-align: center;
+  font-size: 22px !important;
+}
+.ant-card-meta-description {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 16px;
+}
+.body_wrapper {
+  border-top: 1px solid #f0f0f0;
+}
+.body_wrapper ul {
+  margin-top: 22px !important;
+}
+.body_wrapper ul li svg{
+  margin-right: 5px;
+}
+
+.bio {
+  text-align: center;
+  margin-top: 10px;
+}
+button.btn.btn-primary {
+  background: #2da44e;
+  border: none;
+}
+.followButton a {
+  background: #2da44e;
+  display: block;
+  width: 73%;
+  margin: 12px auto;
+  color: #fff;
+  font-weight: bold;
+}
+.followButton a:hover{
+  background: #2da44e;
+  color: #fff;
+
+}
+@media screen and (max-width:600px) {
+  .inputFeild {
+    width: 80%;
+  }
+}
+@media screen and (max-width:425px) {
+  body{
+    background-color: #f6f8fa;
+  }
+  .main-wrapper ul {
+    flex-direction: column;
+  }
+  .inputFeild {
+    width: 100%;
+  }
+  .newsBody {
+    height: auto;
+  }
+  .newsBody {
+    padding: 40px 0px;
+  }
+  .github-profiler {
+    font-size: 18px;
+  }
+  button.swal-button.swal-button--cancel {
+    display: none;
+}
+ 
+}
