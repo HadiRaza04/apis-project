@@ -37,6 +37,10 @@ const navlinks = [
         title: 'Recipe',
         path: '/recipe'
     },
+    {
+        title: 'NumFact',
+        path: '/numfact'
+    },
     
 ]
 const Navbar = () => {
