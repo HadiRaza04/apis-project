@@ -17,7 +17,7 @@
 }
 body {
 
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 /* body {
@@ -217,4 +217,8 @@ button.btn.btn-primary {
     display: none;
 }
  
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

@@ -8,7 +8,6 @@ const page = () => {
       fetch("https://api.quotable.io/random")
       .then((data) => data.json())
       .then((item) => setQuote(item))
-      console.log(quote.content);
     }
   
   return (
@@ -25,5 +24,4 @@ const page = () => {
     </div>
   )
 }
-
 export default page

@@ -45,7 +45,7 @@ const GithubSearchFrom = () => {
         setUser("")
     }
     return (
-        <div className='main-wrapper'>
+        <div className='main-wrapper pt-7'>
             <ul>
                 <li className='inputFeild'> <Form.Control type="text" value={user} placeholder="Search Github Profile " onChange={(e) => setUser(e.target.value)} />
                 </li>
